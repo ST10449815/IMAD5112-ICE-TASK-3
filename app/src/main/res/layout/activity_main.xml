@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DCE45A88"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/tvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="576dp"
+        android:text="@string/guess_a_number_between_1_and_100"
+        android:textAllCaps="false"
+        android:textColor="#020202"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <EditText
+        android:id="@+id/etGuess"
+        android:layout_width="282dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="109dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="407dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:inputType="text"
+        android:text="@string/enter_your_guess"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMessage"
+        tools:ignore="LabelFor" />
+
+    <Button
+        android:id="@+id/btnGuess"
+        android:layout_width="121dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="245dp"
+        android:backgroundTint="#A30FBC"
+        android:text="@string/guess"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etGuess" />
+</androidx.constraintlayout.widget.ConstraintLayout>
